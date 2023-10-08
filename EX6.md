@@ -10,23 +10,15 @@
 
 ### Program:
 ```
-Developed by:Melvin S
-Register no:212222040098
-```
-```
-CREATE TABLE employd (
-  empid NUMBER,
-  empname VARCHAR(10),
-  dept VARCHAR(10),
-  salary NUMBER
-);
-select * from employd;
-INSERT INTO employd VALUES (1, 'John Doe', 'Sales', 100000);
-INSERT INTO employd VALUES (2, 'Jane Doe', 'Marketing', 120000);
+CREATE TABLE employd (empid NUMBER,empname VARCHAR(10),dept VARCHAR(10),salary NUMBER);
+INSERT INTO employd VALUES (01, 'Clara', 'PR', 220000);
+INSERT INTO employd VALUES (02, 'Suheela', 'Marketing', 110000);
+
 ```
 
 ### PLSQL Cursor code
 ```
+SET SERVEROUTPUT ON;
 DECLARE
    CURSOR employd_cursor IS
    SELECT empid,empname,dept,salary
@@ -53,7 +45,7 @@ BEGIN
 END;
 ```
 ### Output:
-![image](https://github.com/BharathCSEIOT/Ex-no-6-Creating-Cursors-using-PL-SQL/assets/122793480/de3e77b5-d9b5-4eea-9bd2-28b9098f36d3)
+![Screenshot 2023-10-08 151843](https://github.com/Melvin14112004/Ex-no-6-Creating-Cursors-using-PL-SQL/assets/129204995/e691fdd4-76e0-4a11-8709-f02dbb86c5bb)
 
 ### Result:
 The Program has been implemented successfully.
